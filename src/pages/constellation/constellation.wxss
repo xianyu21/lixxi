@@ -1,0 +1,37 @@
+/**index.wxss**/
+
+.single-view {
+	width: 19%;
+	border: 1px #dfdfdf solid;
+	float: left;
+	margin: 19px 0px 5px 2.2%;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	align-items: center;
+
+}
+
+.single-view image {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.single-view-nanme {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 0 0.695rem;
+
+}
+
+.single-view text {
+	font-size: 30rpx;
+	color: brown;
+}
+
+.single-view text:last-child {
+	font-size: 24rpx;
+
+}

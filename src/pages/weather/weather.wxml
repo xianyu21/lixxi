@@ -1,0 +1,49 @@
+<!--weather.wxml-->
+<!-- 头部 导航栏-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">导航栏</view>
+</cu-custom>
+<!--  -->
+<view class="margin bg-white radius shadow">
+  <view class="cu-list grid col-3">
+    <view class="cu-item">
+      <text>国家</text>{{nation}}</view>
+    <view class="cu-item">
+      <text>省份</text>{{province}}</view>
+    <view class="cu-item">
+      <text>城市</text>{{city}}</view>
+    <view class="cu-item">
+      <text>体感温度</text>{{fl}}℃</view>
+    <view class="cu-item">
+      <text>温度</text>{{tmp}}℃</view>
+    <view class="cu-item">
+      <text>实况天气状况描述:</text>{{cond_txt}}</view>
+    <view class="cu-item">
+      <text>风向360角度:</text>{{wind_deg}}</view>
+    <view class="cu-item">
+      <text>风向:</text>{{wind_dir}}</view>
+    <view class="cu-item">
+      <text>风力:</text>{{wind_sc}}</view>
+    <view class="cu-item">
+      <text>风速:</text>{{wind_spd}}公里/小时</view>
+    <view class="cu-item">
+      <text>相对湿度:</text>{{hum}}</view>
+    <view class="cu-item">
+      <text>降水量:</text>{{pcpn}}</view>
+    <view class="cu-item">
+      <text>大气压强:</text>{{pres}}</view>
+    <view class="cu-item">
+      <text>能见度:</text>{{vis}}公里</view>
+    <view class="cu-item">
+      <text>云量:</text>{{cloud}}</view>
+  </view>
+  <view class="cu-list grid col-2">
+    <view class="cu-item" wx:for="{{list}}" wx:key="list">
+      <view>{{item.align}}</view>
+      <view>{{item.type}}</view>
+      <view>{{item.brf}}</view>
+      <view class="padding-lr-xs">{{item.txt}}</view>
+    </view>
+  </view>
+</view>

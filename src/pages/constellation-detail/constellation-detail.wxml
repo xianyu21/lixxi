@@ -1,0 +1,72 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">{{grxz}}</view>
+</cu-custom>
+<scroll-view class="detail-container" scroll-y="true">
+  <view class="title"></view>
+  <view class="today">
+    <view class="name">今日运势</view>
+    <view class="index">
+      <text>综合指数：</text>
+      <progress percent="{{summary_star*20}}" color="#0070ff" show-info stroke-width="10" active="true" />
+    </view>
+    <view class="index">
+      <text>爱情指数：</text>
+      <progress percent="{{love_star*20}}" show-info stroke-width="12" active="true" />
+    </view>
+    <view class="index">
+      <text>财富指数：</text>
+      <progress percent="{{money_star*20}}" show-info stroke-width="12" active="true" />
+    </view>
+    <view class="index">
+      <text>工作指数：</text>
+      <progress percent="{{work_star*20}}" show-info stroke-width="12" active="true" />
+    </view>
+    <view class="index">
+      <text>贵人星座：</text>
+      <text class="value">{{grxz}}</text>
+    </view>
+    <view class="index">
+      <text>幸运数字：</text>
+      <text class="value">{{lucky_num}}</text>
+    </view>
+    <view class="index">
+      <text>吉时：</text>
+      <text class="value">{{lucky_time}}</text>
+    </view>
+    <view class="index">
+      <text>吉利方位：</text>
+      <text class="value">{{lucky_direction}}</text>
+    </view>
+    <view class="index">
+      <text>今日提醒：</text>
+      <text class="value">{{day_notice}}</text>
+    </view>
+    <view class="index">
+      <text>运势简评：</text>
+      <text class="value">{{general_txt}}</text>
+    </view>
+    <view class="index">
+      <text>爱情运势：</text>
+      <text class="value">{{love_txt}}</text>
+    </view>
+    <view class="index">
+      <text>工作运势：</text>
+      <text class="value">{{work_txt}}</text>
+    </view>
+    <view class="index">
+      <text>财富运势：</text>
+      <text class="value">{{money_txt}}</text>
+    </view>
+    <view class="index">
+      <text>时间：</text>
+      <text class="value">{{time}}</text>
+    </view>
+    <view class="index">
+      <text>吉色：</text>
+      <text class="value">{{lucky_color}}</text>
+    </view>
+  </view>
+  
+
+</scroll-view>

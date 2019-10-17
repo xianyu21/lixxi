@@ -1,0 +1,118 @@
+<!--index.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">星座</view>
+</cu-custom>
+
+<view class="padding">
+  <view class="cu-list grid col-4 text-center radius shadow">
+    <view class="cu-item margin-top-xs" data-name="shuiping" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Aquarius.png);'></view>
+      </view>   
+      <view>
+        <text>水瓶座</text>
+        <text>1.20~2.18</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="shuangyu" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Pisces.png);'></view>
+      </view>
+      <view>
+        <text>双鱼座</text>
+        <text>2.19~3.20</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="baiyang" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Capricorn.png);'></view>
+      </view>
+      <view>
+        <text>白羊座</text>
+        <text>3.21~4.19</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="jinniu" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Taurus.png);'></view>
+      </view>
+      <view>
+        <text>金牛座</text>
+        <text>4.20~5.20</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="shuangzi" bindtap="showDetail">
+     <view class="flex justify-center">
+         <view class='cu-avatar xl round' style='background-image:url(/images/Gemini.png);'></view>
+      </view>
+      <view>
+        <text>双子座</text>
+        <text>5.21~6.21</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="juxie" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Cancer.png);'></view>
+      </view>
+      <view>
+        <text>巨蟹座</text>
+        <text>6.22~7.22</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="shizi" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Leo.png);'></view>
+      </view>
+      <view>
+        <text>狮子座</text>
+        <text>7.23~8.22</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="chunv" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Virgo.png);'></view>
+      </view>
+      <view>
+        <text>处女座</text>
+        <text>8.23~9.22</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="tiancheng" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Libra.png);'></view>
+      </view>
+      <view>
+        <text>天秤座</text>
+        <text>9.23~10.23</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="tianxie" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Scorpio.png);'></view>
+      </view>
+      <view>
+        <text>天蝎座</text>
+        <text>10.24~11.22</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="sheshou" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Sagittarius.png);'></view>
+      </view>
+      <view>
+        <text>射手座</text>
+        <text>11.23~12.21</text>
+      </view>
+    </view>
+    <view class="cu-item margin-top-xs" data-name="mojie" bindtap="showDetail">
+      <view class="flex justify-center">
+        <view class='cu-avatar xl round' style='background-image:url(/images/Pisces.png);'></view>
+      </view>
+      <view>
+        <text>摩羯座</text>
+        <text>12.22~1.19</text>
+      </view>
+    </view>
+  </view>
+</view>

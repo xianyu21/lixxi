@@ -1,0 +1,85 @@
+page {
+  height: 100%;
+  background: #fff;
+  font-size: 16px;
+}
+
+.detail-container {
+  height: 100%;
+  background-size: cover;
+  color: #000;
+  padding: 8px;
+}
+
+.name {
+  font-size: 40rpx;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.index {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+}
+
+.summary {
+  font-size: 26rpx;
+  text-indent: 2em;
+  line-height: 38rpx;
+  margin-top: 8px;
+}
+
+.index text {
+  font-size: 28rpx;
+  width: 25%;
+  text-align: left;
+}
+.index text:first-child{
+   text-align: right;
+}
+.index text.value {
+  width: 75%;
+  font-size: 28rpx;
+  color: #000;
+}
+
+.index progress {
+  flex-grow: 1;
+}
+
+.today {
+  margin-right: 10px;
+}
+
+.year {
+  margin-top: 18px;
+  margin-right: 10px;
+}
+
+.year .con {
+  font-size: 26rpx;
+  text-indent: 2em;
+  line-height: 38rpx;
+  margin-top: 8px;
+}
+
+.year .con text {
+  font-weight: bold;
+}
+
+.btn_yzm {
+  font-size: 24rpx;
+  background-color: #eee;
+  border-radius: 20rpx;
+  margin: 20px 0;
+  height: 50rpx;
+  width: 50%;
+  line-height: 50rpx;
+}
+
+.btn_yzm text {
+  vertical-align: middle;
+  display: table-cell;
+}

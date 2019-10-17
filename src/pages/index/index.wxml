@@ -1,0 +1,72 @@
+
+<!-- 头部 导航栏-->
+<cu-custom bgColor="bg-gradual-blue">
+    <view slot="content">欢迎^_^{{userInfo.nickName}}</view>
+</cu-custom>
+<view class="margin-lg padding-sm bg-white radius shadow">
+    <view class="flex justify-center">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn round bg-green shadow'> 获取头像昵称 </button>
+        <block wx:else>
+            <view class='text-center'>
+                <view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+                <view class="padding-xs">{{userInfo.nickName}}</view>
+            </view>
+        </block>
+    </view>
+</view>
+<view class="bg-white margin-lg radius shadow ">
+    <view class="cu-list grid col-3 text-center radius">
+        <view class="cu-item padding-lg" bindtap='ninthPalace1'>
+          <text class="">星座</text>
+        </view>
+        <view class="cu-item padding-lg" bindtap='ninthPalace2'>
+          <text class="">天气</text>
+        </view>
+        <view class="cu-item padding-lg" bindtap=''>
+          <text class="">敬请期待</text>
+        </view>
+        <!--  <view class="cu-item padding-lg" bindtap=''>
+          <text class="">快递</text>
+        </view>
+        <view class="cu-item padding-lg" bindtap=''>
+          <text class="">地图</text>
+        </view>
+        <view class="cu-item padding-lg" bindtap=''>
+          <text class="">音乐</text>
+        </view>
+        <view class="bg-blue padding">1</view>
+        <view class="bg-blue padding">1</view>
+        <view class="bg-blue padding">1</view>
+        <view class="bg-blue padding">1</view> -->
+    </view>
+</view>
+<view class="text-center margin-top">
+    <text class="text-grey text-xl">Hi  {{userInfo.nickName}}!</text>
+</view>
+<!-- 底部 导航栏-->
+<!-- <view class="cu-bar tabbar bg-white shadow foot">
+    <view class="cu-bar tabbar bg-white">
+        <view class="action text-green" bindtap='index'>
+            <view class="cuIcon-homefill"></view> 首页
+        </view>
+        <view class="action text-gray" bindtap='utils'>
+            <view class="cuIcon-similar"></view> 分类
+        </view>
+        <view class="action text-gray add-action" bindtap='index'>
+            <button class="cu-btn cuIcon-add bg-green shadow"></button>
+            发布
+        </view>
+        <view class="action text-gray" bindtap='plugin'>
+            <view class="cuIcon-cart">
+                <view class="cu-tag badge">99</view>
+            </view>
+            卡卡卡
+        </view>
+        <view class="action text-gray" bindtap='about'>
+            <view class="cuIcon-my">
+                <view class="cu-tag badge"></view>
+            </view>
+            我的
+        </view>
+    </view>
+</view> -->
